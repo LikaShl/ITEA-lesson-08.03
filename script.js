@@ -68,19 +68,21 @@ let words = [
   "ротатор",
 ];
 
-function isPalindrom(arr){
-   arr.forEach(word => {
+function isPalindrom(arr) {
+  arr.forEach((word) => {
     let reverseWord = word.split("").reverse().join("");
-if(word == reverseWord) {
-    console.log("Yes, "+ word +" is palindrome")
-} else { console.log("No, " + word + " is not a palindrome")}
-   }); 
+    if (word == reverseWord) {
+      console.log("Yes, " + word + " is palindrome");
+    } else {
+      console.log("No, " + word + " is not a palindrome");
+    }
+  });
 }
-isPalindrom(words)
+isPalindrom(words);
 // 6. Напишіть слово задом наперед. Будь-яке слово. Можна питати в користувача
 let word = prompt("напиши будь-яке слово");
-function reversingWord(a){
-    let newWord = a.split("").reverse().join("");
-    alert(newWord);
+function reversingWord(a) {
+  let newWord = a.split("").reverse().join("");
+  alert(newWord);
 }
 reversingWord(word);
